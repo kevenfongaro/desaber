@@ -1,0 +1,71 @@
+.noPassado {
+    width: 88%;
+    margin: auto auto;
+    padding: 130px 0;
+}
+
+.noPassado--header {
+    display: grid;
+    grid-template-columns: 10% auto 1fr;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+h1.noPassado--header--texto {
+    color: #9E9E9E;
+    text-align: center;
+    padding: 0 40px;
+    width: fit-content;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.noPassado--header--linhaEsquerda {
+    width: 100%;
+}
+
+.noPassado--header--linhaDireita {
+    width: 100%;
+}
+
+.noPassado--header--linhaEsquerda,
+.noPassado--header--linhaDireita {
+    height: 1px;
+    background: rgba(158, 158, 158, 0.2);
+}
+
+.noPassado--encontros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 282px));
+    grid-column-gap: 4%;
+    grid-row-gap: 40px;
+    margin: auto auto;
+    width: 86vw;
+    justify-content: center;
+}
+
+@media all and (max-width: 1360px) {
+
+
+
+}
+
+
+@media all and (max-width: 1024px) {
+
+    .noPassado {
+        padding: 60px 0;
+    }
+
+    h1.noPassado--header--texto {
+        font-size: 22px;
+    }
+
+    .noPassado--encontros {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(46%, 46%));
+        grid-column-gap: 7%;
+    }
+}

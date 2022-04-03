@@ -1,0 +1,268 @@
+.dicionario {
+    height: auto;
+    min-height: calc(85vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.5;
+    color: #0C0C0C;
+}
+.dicionario--conteudo {
+    justify-self: center;
+    align-self: flex-start;
+}
+.dicionario--chamada {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.dicionario--header .unv--boxcontainer {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.dicionario--header h1.dicionario--texto {
+    font-weight: 300;
+    font-size: 80px;
+    margin: 0 0;
+}
+
+.dicionario--header h1.dicionario--icone {
+    font-weight: 300;
+    font-size: 65px;
+    margin: 10px 10px 0 0;
+    width: fit-content;
+}
+
+
+.dicionario--header .iconify {
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.dicionario--header .iconify path {
+    fill: #c10ec8;
+    animation: gradientefill 30s ease infinite;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes gradientefill {
+    0% {
+        fill: #c10ec8;
+    }
+    5% {
+        fill: #ffb431;
+    }
+    18% {
+        fill: #45bea0;
+    }
+    22% {
+        fill: #656cf8;
+    }
+    39% {
+        fill: #e40000;
+    }
+    44% {
+        fill: #c10ec8;
+    }
+    50% {
+        fill: #e40000;
+    }
+    57% {
+        fill: #656cf8;
+    }
+    72% {
+        fill: #45bea0;
+    }
+    90% {
+        fill: #ffb431;
+    }
+    100% {
+        fill: #c10ec8;
+    }
+}
+
+.dicionario--header .iconify:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+
+.dicionario--header h2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0 0 60px 0px;
+}
+.dicionario--definicoes p {
+    margin: 30px 0 30px 0;
+}
+
+.dicionario--definicoes--definicao {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.dicionario--definicoes--exemplo {
+    color: #737373;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.dicionario--chamada {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 0 60px 60px 0;
+    
+}
+
+.dicionario--chamada--texto {
+    align-self: center;
+    padding: 25px 20px;
+    text-align: right;
+}
+
+.dicionario--chamada--texto--destaque {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.dicionario--chamada--texto--secundario {
+    color: #737373;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.dicionario--chamada--aspaEsquerda {
+    align-self: flex-start;
+}
+
+.dicionario--chamada--aspaDireita {
+    align-self: flex-end;
+}
+
+.dicionario--chamada--aspaEsquerda,
+.dicionario--chamada--aspaDireita {
+    font-size: 34px;
+    color: #C10EC8;
+    animation: gradientecolor 30s ease infinite;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes gradientecolor {
+    0% {
+        color: #c10ec8;
+    }
+    5% {
+        color: #ffb431;
+    }
+    18% {
+        color: #45bea0;
+    }
+    22% {
+        color: #656cf8;
+    }
+    39% {
+        color: #e40000;
+    }
+    44% {
+        color: #c10ec8;
+    }
+    50% {
+        color: #e40000;
+    }
+    57% {
+        color: #656cf8;
+    }
+    72% {
+        color: #45bea0;
+    }
+    90% {
+        color: #ffb431;
+    }
+    100% {
+        color: #c10ec8;
+    }
+}
+
+@media all and (max-width: 1024px)
+and (orientation: landscape) {
+
+    .dicionario--header h1.dicionario--texto {
+        font-size: 60px;
+    }
+    .dicionario--header h1.dicionario--icone {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 1024px)
+and (orientation: portrait) {
+
+    .dicionario {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .dicionario--conteudo {
+        margin: auto auto;
+        width: 100%;
+    }
+
+    .dicionario--header {
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .dicionario--header .unv--boxcontainer {
+        flex-direction: row;
+    }
+
+    .dicionario--header h1.dicionario--texto {
+        font-size: 50px;
+    }
+
+    .dicionario--header h1.dicionario--icone {
+        margin: 0 10px 0 0;
+    }
+
+    
+    .dicionario--header h1 i {
+        display: inline-block;
+    }
+
+    .dicionario--header .iconify {
+        font-size: 45px;
+    }   
+
+    .dicionario--header h2 {
+        font-size: 20px;
+        margin: 0 0 60px 0;    
+    }
+
+    .dicionario--chamada {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        margin: auto auto auto 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+}
+

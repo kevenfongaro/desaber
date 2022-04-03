@@ -1,0 +1,124 @@
+.menuFlutuante {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 998;
+}
+
+.menuFlutuante.menuFlutuante--naofixo {
+    padding: 15px 30px;
+}
+
+.menuFlutuante.menuFlutuante--fixo {
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    transition: all .5s;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.menuFlutuante.menuFlutuante--fixo.scroll.branco {
+    background: rgb(0,0,0,0.8);
+}
+
+.menuFlutuante.menuFlutuante--fixo.scroll.preto {
+    background: rgb(255,255,255,0.95);
+}
+
+.menuFlutuante--logo {
+    width: 160px;
+    align-self: start;
+}
+
+.menuFlutuante--logo a {
+    text-decoration: none;
+}
+
+.menuFlutuante--logo h1:hover {
+    background-size: 700% 100%;
+    animation: gradient 40s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.menuFlutuante--logo h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #c10ec8, #ffb431, #45bea0, #656cf8, #e40000);
+    background-size: 300% 100%;
+    animation: gradient 40s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    opacity: 1;
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+a.menuFlutuante--link {
+    font-size: 12px;
+    text-decoration: none;
+    margin: 5px 0 0 0;
+    padding: 0 10px;
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+a.menuFlutuante--link.branco {
+    color: #CECECE;
+}
+a.menuFlutuante--link.preto {
+    color: #737373;
+}
+a:hover.menuFlutuante--link {
+    font-size: 15px;
+}
+
+
+
+@media all and (max-width: 1360px) {
+
+}
+
+@media all and (max-width: 1024px)
+and (orientation: portrait) {
+    .menuFlutuante.menuFlutuante--fixo {
+        position: relative;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        width: 90%;
+    }
+    .menuFlutuante.menuFlutuante--fixo .menuFlutuante--logo {
+        margin: 20px 0 0 10px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,313 @@
+.unv--secao {
+    margin-bottom: 150px;
+}
+
+.unv--container {
+    min-height: inherit;
+    width: inherit;
+    margin: 0 0 0 15%;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    color: #0C0C0C;
+    line-height: 1.5;
+}
+
+.unv--container h1 {
+    font-family: 'Roboto';
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+    font-size: 80px;
+    margin: 0 0 10px 0;
+    line-height: 120%;
+}
+
+.unv--container h5 {
+    font-family: 'Roboto';
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0 0 10px 0;
+    line-height: 120%;
+}
+
+.unv--colunacheia {
+    width: 100%;
+}
+
+.unv--colunasemicheia {
+    width: 90%;
+}
+
+.unv--duascolunas {
+    width: 80%;
+}
+
+.unv--umacoluna {
+    width: 40%;
+}
+
+.unv--boxcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.unv--box {
+    width: 95%;
+    padding-right: 60px;
+}
+
+.unv--container h2 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    color: #c10ec8;
+}
+
+.unv--container h3 {
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 400;
+    color: #c10ec8;
+}
+
+.unv--container h4 {
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 400;
+    color: #c10ec8;
+    text-align: center;
+}
+
+.unv--corpo .destaque1 {
+    font-size: 14px;   
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding: 5px;
+    background: #c10ec8;
+    color: #FFF;
+}
+
+.unv--corpo .destaque2 {
+    font-size: 14px;   
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #c10ec8;
+}
+
+.unv--corpo .destaque3,
+.unv--corpo .destaque4,
+.unv--corpo .destaque5,
+.unv--corpo .destaque6 {
+    background: #c10ec8;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 10px 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.unv--corpo .destaque3 {
+    background: #45bea0 ;
+}
+
+.unv--corpo .destaque4 {
+    background: #656cf8 ;
+}
+
+.unv--corpo .destaque5 {
+    background: #ffb431 ;
+}
+
+.unv--corpo .destaque6 {
+    background: #e40000 ;
+}
+
+.unv--corpo .destaque7 {
+    font-size: 14px;   
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #c10ec8;
+}
+
+.unv--corpo .destaque8 {
+    font-size: 14px;   
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.unv--corpo .destaque9 {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: italic;
+    color: #777;
+}
+
+.unv--corpo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.unv--corpo.unv--corpo.unv--duascolunas p {
+    padding-right: 60px;
+}
+
+.unv--corpo p span.destaque {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: italic;
+}
+
+a.linksemestilo,
+a.linksemestilo:visited {
+    color: #7E7E7E;
+    text-decoration: none;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+a.linksemestilo:hover {
+    color: #c10ec8;
+}
+
+button.button-roxo {
+    margin-top: 30px;
+    background: #c10ec8;
+    color: #fff;
+    font-weight: 500;
+    width: fit-content;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    padding: 15px 60px;
+    border: none;
+    font-family: 'Roboto';
+}
+
+button.button-roxo:hover {
+    background: #ffb431;
+    cursor: pointer;
+}
+
+@media all and (max-width: 1440px)
+and (orientation: landscape) {
+    .unv--secao {
+        margin-bottom: 130px;
+    }
+    .unv--container {
+        margin: 0 0 0 10%;
+    }
+    .unv--container h5,
+    .unv--container h1 {
+        font-size: 50px;
+    }
+    .unv--container h3 {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width: 1270px)
+and (orientation: landscape) {
+    .unv--secao {
+        margin-bottom: 100px;
+    }
+    .unv--container {
+        margin: 0 0 0 8%;
+    }
+    .unv--container h5,
+    .unv--container h1 {
+        font-size: 50px;
+    }
+    .unv--container h3 {
+        font-size: 25px;
+    }
+    .unv--colunasemicheia {
+        width: 95%;
+    }
+    .unv--box {
+        padding-right: 20px;
+        width: 100%;
+    }
+    .unv--umacoluna {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 1024px)
+and (orientation: landscape) {
+    .unv--container h1,
+    .unv--container h5 {
+        font-size: 44px;
+    }
+
+    .unv--container h3 {
+        font-size: 23px;
+    }
+}
+
+
+
+@media all and (max-width: 1024px)
+and (orientation: portrait) {
+
+    .unv--secao {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .unv--container {
+        flex-direction: column;
+        margin: auto auto;
+        width: 100%;
+    }
+
+    .unv--corpo.unv--corpo.unv--duascolunas,.unv--corpo.unv--umacoluna {
+        margin: auto auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .unv--corpo.unv--corpo.unv--duascolunas p {
+        padding-right: 0;
+    }
+
+    .unv--cabecalho {
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .unv--container h1 {
+        font-size: 40px;
+    }
+
+    .unv--container h3 {
+        font-size: 23px;
+    }
+    
+    .unv--container h5 {
+        font-size: 40px;
+    }
+
+    .unv--boxcontainer {
+        flex-direction: column;
+    }
+
+    .unv--box {
+        padding: 0;
+    }
+
+    .unv--box h2 {
+        margin: 20px 0;
+    }
+    
+}

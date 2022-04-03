@@ -1,0 +1,148 @@
+.tabs {
+    background: none;
+    color: #737373;
+    position: fixed;
+    z-index: 9999;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 11px 0;
+    right: 20%;
+}
+
+.MuiTab-root {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-family: 'Roboto' !important;
+    text-transform: none !important;
+    min-width: 100px !important;
+}
+
+.MuiTab-wrapper {
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+.MuiTab-wrapper:hover {
+    font-size: 15px;
+}
+
+.MuiTabs-flexContainer {
+    flex-wrap: wrap;
+}
+
+.MuiTab-textColorInherit.Mui-selected {
+    opacity: 1;
+    color: #C10EC8;
+    animation: gradientecolor 30s ease infinite;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes gradientecolor {
+    0% {
+        color: #c10ec8;
+    }
+    5% {
+        color: #ffb431;
+    }
+    18% {
+        color: #45bea0;
+    }
+    22% {
+        color: #656cf8;
+    }
+    39% {
+        color: #e40000;
+    }
+    44% {
+        color: #c10ec8;
+    }
+    50% {
+        color: #e40000;
+    }
+    57% {
+        color: #656cf8;
+    }
+    72% {
+        color: #45bea0;
+    }
+    90% {
+        color: #ffb431;
+    }
+    100% {
+        color: #c10ec8;
+    }
+}
+.MuiTab-textColorInherit {
+    opacity: 1 !important;
+}
+
+.slide {
+    margin: 0;
+    min-height: 80vh !important;
+}
+
+.react-swipeable-view-container {
+    min-height: 80vh !important;
+    margin-top: 115px;
+}
+
+.iconecolorido {
+    font-size: 34px;
+    color: #C10EC8;
+    animation: gradientecolor 30s ease infinite;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@media all and (max-width: 1440px)
+and (orientation: landscape) {
+    .tabs {
+        right: 15%;
+    }
+    .MuiButtonBase-root {
+        min-width: 10% !important;
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+
+    .slide {
+        margin-top: 0;
+        padding: 60px 20px;
+    }
+    .tabs {
+        position: fixed;
+        bottom: 0;
+        background: #FFF;
+        width: 100%;
+        right: 0;
+    }
+    .MuiTab-root {
+        padding: 6px 8px !important;
+        margin: 0  !important;
+        font-size: 12px  !important;
+        min-width: fit-content  !important;
+        min-height: auto !important;
+    }
+
+    .MuiTabs-flexContainer {
+        justify-content: center;    
+    }
+    
+    .MuiButtonBase-root {
+        min-width: 30% !important;
+    }
+    
+    .react-swipeable-view-container {
+        min-height: 80vh !important;
+        margin-top: 30px;
+        margin-bottom: 140px;
+    }
+}

@@ -1,0 +1,395 @@
+.proxEncontroContainer {
+    height: fit-content;
+}
+
+.proxEncontro--bg {
+    width: inherit;
+    height: inherit;
+    background: rgb(0,0,0);
+    background: -moz-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    padding-bottom: 60px;
+}
+
+.proxEncontro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.proxEncontro--capa {
+    width: 30%;
+    max-width: 456px;
+    height: auto;
+    margin: 0px 30px 0 130px;
+}
+.proxEncontro--capa img {
+    width: 100%;
+}
+
+.proxEncontro--infos {
+    width: 70%;
+    max-width: 678px;
+    margin: 0px 130px 0 30px;
+    padding-left: 25px;
+}
+
+.proxEncontro--infos span {
+    color: #CECECE;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.proxEncontro--infos h2 {
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: none;
+    color: #FFF;
+    letter-spacing: 1px;
+    margin: 0px 0 50px;
+}
+
+.proxEncontro--infos p {
+    font-size: 13px;
+    line-height: 185%;
+    color: #F8F8F8;
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 68%;
+    margin: 0;
+}
+
+.proxEncontro--infoBar {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.proxEncontro--infoBar .iconify {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.proxEncontro--infoBar--data {
+    margin: 0 0 0 40px;
+}
+
+.proxEncontro--infoBar--item:first-child {
+    margin: 0 0 0 0 !important;
+}
+
+.proxEncontro--infoBar--item:last-child {
+    margin: 0 0 0 40px;
+}
+
+.proxEncontro--infoBar--diaEHora,
+.proxEncontro--infoBar--data,
+.proxEncontro--infoBar--com {
+    display: inline-block;
+    color: #CECECE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu {
+	visibility: hidden;
+    padding: 10px 5px;
+    border-radius: 0;
+    box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 10%);
+    opacity: 0;
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    will-change: transform;
+    position: absolute;
+    width: fit-content;
+    left: auto;
+    right: 240px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+#menu button  {
+    opacity: 1;
+    margin: 0 10px;
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+#menu button:hover {
+    transform: scale(1.3,1.3);
+    color: #000;
+}
+
+#menu.visivel {
+    opacity: 1;
+	visibility: visible;
+}
+
+.proxEncontro--botoes a {
+    text-decoration: none;
+}
+
+.proxEncontro--botao {
+    width: 248px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.proxEncontro--botao--destaque {
+    background: #C10EC8;
+    border: 1px solid #C10EC8;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.proxEncontro--botao--destaque:hover {
+    border: 1px solid #FFB431;
+    background: #FFB431;
+}
+
+.proxEncontro--botao--secundario {
+    color: #CECECE;
+    border: 1px solid #CECECE;
+    background: none;
+
+
+   
+}
+.proxEncontro--botao--secundario--aberto,
+.proxEncontro--botao--secundario:hover {
+    background: #CECECE;
+    border: 1px solid #CECECE;
+    color: #181818;
+    cursor: pointer;
+}
+
+.blur-up {
+    opacity: 0.1;
+    animation: imagem 1s ease infinite;
+    transition: all .2s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes imagem {
+    0% {
+        opacity: 0.2
+    }
+    50% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 0.2
+    }
+}
+
+.blur-up.lazyloaded {
+    opacity: 1;
+    animation: none;
+}
+
+@media all and (max-width: 1360px) {
+    .proxEncontro--capa {
+        margin: 0px 30px 0 60px;
+    }
+
+    .proxEncontro--infos {
+        margin: 0px 60px 0 30px;
+    }
+}
+
+@media all and (max-width: 1140px) {
+    .proxEncontro--infos h2 {
+        font-size: 32px;
+    }
+
+    .proxEncontro--botao {
+        width: 150px;
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1024px)
+and (orientation: portrait) {
+    .proxEncontro--bg {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
+        background: rgb(0,0,0);
+        background: -moz-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        background: -webkit-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        background: radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+
+    .proxEncontro {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .proxEncontro--capa {
+        width: 80%;
+        margin: 30px auto;
+        height: 50%;
+    }
+
+    .proxEncontro--infos {
+        width: 80%;
+        max-width: 87%;
+        margin: 0px 0 0 0px;
+        padding-left: 0;
+    }
+
+    .proxEncontro--infos h2 {
+        font-size: 24px;
+        margin: 0 0 30px 0;
+    }
+
+    .proxEncontro--infos p {
+        font-size: 13px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .proxEncontro--infoBar {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        grid-gap: 15px;
+        font-size: 11px;
+        margin: 30px 0 40px 0;
+    }
+
+    .proxEncontro--infoBar--data,
+    .proxEncontro--infoBar--item:last-child {
+        margin: 0;
+    }
+
+    .proxEncontro--botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .proxEncontro--botao {
+        width: 130px;
+        font-size: 12px;
+        padding: 15px 4px;
+    }
+
+    #menu {
+        right: 0px;
+        margin-top: 60px;  
+    }
+}
+
+
+@media all and (max-width: 1024px)
+and (orientation: landscape) {
+    .proxEncontro--bg {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
+        background: rgb(0,0,0);
+        background: -moz-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        background: -webkit-radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        background: radial-gradient(circle, rgba(0,0,0,0.85) 16%, rgba(0,0,0,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+
+    .proxEncontro {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .proxEncontro--capa {
+        width: 30%;
+        height: 100%;
+    }
+
+    .proxEncontro--infos {
+        width: 50%;
+        max-width: 87%;
+        margin: 0px 20px 0 30px;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    .proxEncontro--infos h2 {
+        font-size: 24px;
+        margin: 0 0 30px 0;
+    }
+
+    .proxEncontro--infos p {
+        font-size: 13px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .proxEncontro--infoBar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 11px;
+        margin: 30px 0 40px 0;
+    }
+
+    .proxEncontro--infoBar--data,
+    .proxEncontro--infoBar--item:last-child {
+        margin: 0;
+    }
+
+    .proxEncontro--botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .proxEncontro--botao {
+        width: 130px;
+        font-size: 12px;
+        padding: 15px 4px;
+    }
+
+    #menu {
+        right: 0px;
+        margin-top: 60px;  
+    }
+}
+

@@ -1,0 +1,119 @@
+.telaCarregando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: #FEFEFE;
+}
+.telaCarregando .logo {
+    width: 30px;
+    -webkit-animation: girar 1s linear infinite;
+    animation: girar 1s linear infinite;
+}
+
+@-webkit-keyframes girar {
+    0% { -webkit-transform: rotate(0deg); }
+    80% { -webkit-transform: rotate(320deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+    @keyframes girar {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(320deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.telaCarregando .logo path {
+    fill: #c10ec8;
+    animation: logo 30s ease infinite;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+@keyframes logo {
+    0% {
+        fill: #c10ec8;
+    }
+    5% {
+        fill: #ffb431;
+    }
+    18% {
+        fill: #45bea0;
+    }
+    22% {
+        fill: #e40000;
+    }
+    39% {
+        fill: #656cf8;
+    }
+    44% {
+        fill: #c10ec8;
+    }
+    50% {
+        fill: #656cf8;
+    }
+    57% {
+        fill: #e40000;
+    }
+    72% {
+        fill: #45bea0;
+    }
+    90% {
+        fill: #ffb431;
+    }
+    100% {
+        fill: #c10ec8;
+    }
+}
+
+
+.erroDb {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+.erroDb h1 {
+    font-size: 90px;
+    margin: 0 0 60px 0;
+    background: linear-gradient(90deg, #c10ec8, #ffb431, #45bea0, #656cf8, #e40000);
+    background-size: 600% 100%;
+    animation: gradient 40s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    opacity: 1;
+    transition: all .1s;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.erroDb p {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

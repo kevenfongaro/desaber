@@ -1,0 +1,16 @@
+.notion--container {
+    min-height: 100vh;
+    margin: 0 0;
+    background: #FFF;
+}
+
+.modal .encontroDetalhes .notion--container {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.notion--container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

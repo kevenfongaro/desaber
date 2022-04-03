@@ -1,0 +1,46 @@
+.equipe {
+    height: inherit;
+}
+
+.equipe--perfil--container {
+    width:150px;
+    height:150px;
+    overflow: hidden;
+    border-radius:50%;
+    position: relative;
+  }
+  
+  .equipe--perfil--container img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+  }
+
+.equipe .unv--boxcontainer {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.equipe .unv--box {
+    width: 25%;
+}
+
+
+.equipe .unv--box h2 {
+    margin-bottom: 0;
+}
+
+.equipe .unv--box .bio {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+@media all and (max-width: 1024px) {
+    .equipe .unv--box {
+        width: 100%;
+    }
+}
